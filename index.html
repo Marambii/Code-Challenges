@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Student Grades Generator</title>
-    <!--Link to CSS-->
-    
-    <link rel="stylesheet" href="styles.css">
+    <title>Overspeeding ticket generator</title>
+    <!-- CSS linking-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
+  <body>
 
-  <!-- The body -->
- 
-    <body>
-     <!-- this is where the marks are inputed -->
-    <div class="container">
-      <h1>Enter Student Marks</h1>
-      <label for="marks">Marks:</label>
-      <input type="number" id="marks" name="marks">
-
-      <!--The button to generate the marks-->
-      <button onclick="calculateGrade()">Generate grade</button>
-      <!-- Where to view the marks from btn 0 - 100 -->
-
-      <div id="output"></div>
+<!--The division that holds the form and the button-->
+    <div class ="container">
+        <h1>Speeding Ticket Calculator</h1>
+        <label for="speed">Insert speed in km/h:</label>
+        <input type="number" id="speed" name="speed" required>
+        <!-- THe button that generates the comments-->
+        <button onclick="calculatePoints()">Calculate Speed</button>
+        <!-- The Output section that displays the comments depending on speed-->
+        <div >
+            <p id="output"></p>
+        </div>
 
     </div>
-    <!-- Link tag to JavaScript-->
-    <script src="script.js"></script>
+<!-- JS linking-->
+    <script src="index.js"></script>
   </body>
 </html>

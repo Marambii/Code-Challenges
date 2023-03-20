@@ -1,18 +1,17 @@
-# code-challenge-week-1
-Project title=" Student Grade Generator"
+# Code-challenge-week-1-code-2
 
-Description..
+Project Title; Speeding Ticket Calculator.
 
-In this project, I have created a program that takes in values for student marks and generates the required grades as per the requirements. i.e..
+Project Description..
 
-"Write a program that prompts the user to input student marks. The input should be between 0 and 100. Then output the correct grade as follows: 
+Write a program that takes as input the speed of a car e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
 
-A > 79, B > 60 to 79, C > 59 to 49, D > 40 to 49, E > less 40."
+For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 
-Setup..
+Project Setup..
 
- I used HTML as the basic website generator, styled it with Css and added the Grade generator using else if with the Script.js file. 
+I have used HTML as the main website generator. The CSS file has been used to style the contents of the HTML file. The JavaScript file has been used to generate the comments and the points that are dependant on the speed that has been inputed.
 
+Pooject Author: Baruch Marambi Mwenda
 
- Author; Baruch Marambi Mwenda 
- Licenced by moringaschool.com
+licenced by moringaschool.com

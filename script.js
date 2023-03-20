@@ -1,22 +1,17 @@
-// The else if function that generates the marks btn 0 and 100 //
-function calculateGrade() {
-    const marks = document.getElementById("marks").value;
-    let grade;
-  
-    if (marks > 79 && marks < 101) {
-      grade = "A";
-    } else if (marks >= 60 && marks <= 79) {
-      grade = "B";
-    } else if (marks >= 50 && marks <= 59) {
-      grade = "C";
-    } else if (marks >= 40 && marks <= 49) {
-      grade = "D";
-    } else if (marks >= 0 && marks <= 39) {
-      grade = "E";
+// the function generating the comments depending on the speed //
+function calculatePoints() {
+    const speed = document.getElementById("speed").value;
+    let points = 0;
+    
+    if (speed < 70 && speed > 0) {
+      document.getElementById("output").innerHTML = "Ok";
     } else {
-      grade = "Input Relevant marks!!!";
+      points = Math.floor((speed - 70) / 5);
+      if (points > 12) {
+        document.getElementById("output").innerHTML = "License suspended";
+      } else {
+        document.getElementById("output").innerHTML = "Points: " + points;
+      }
     }
-  // linking back and tracking to the index.html file //
-    document.getElementById("output").innerHTML = "Grade: " + grade;
   }
   
